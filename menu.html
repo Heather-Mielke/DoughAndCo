@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Dough & Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="menu-page">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Dough & Co. home">
+          <span class="brand__mark" aria-hidden="true">D</span>
+          <span class="brand__name">Dough & Co.</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link nav__link--active" href="menu.html">Menu</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="menu-main" data-menu-page>
+      <section class="menu-hero" aria-labelledby="menu-heading">
+        <div class="menu-hero__inner">
+          <h1 id="menu-heading" class="menu-hero__title">
+            <span class="menu-hero__title-line menu-hero__title-line--dark">The</span>
+            <span class="menu-hero__title-line menu-hero__title-line--pink">Menu</span>
+          </h1>
+          <p class="menu-hero__lede">
+            Everything handcrafted. Everything fresh. Nothing survives past closing.
+          </p>
+        </div>
+      </section>
+
+      <div class="menu-toolbar">
+        <div class="menu-toolbar__inner">
+          <div
+            class="menu-filters"
+            role="tablist"
+            aria-label="Filter menu by category"
+          >
+            <button
+              type="button"
+              class="menu-filter menu-filter--active"
+              role="tab"
+              aria-selected="true"
+              data-menu-filter="all"
+            >
+              All
+            </button>
+            <button
+              type="button"
+              class="menu-filter"
+              role="tab"
+              aria-selected="false"
+              data-menu-filter="donuts"
+            >
+              Donuts
+            </button>
+            <button
+              type="button"
+              class="menu-filter"
+              role="tab"
+              aria-selected="false"
+              data-menu-filter="pastries"
+            >
+              Pastries
+            </button>
+            <button
+              type="button"
+              class="menu-filter"
+              role="tab"
+              aria-selected="false"
+              data-menu-filter="muffins-breads"
+            >
+              Muffins &amp; Breads
+            </button>
+            <button
+              type="button"
+              class="menu-filter"
+              role="tab"
+              aria-selected="false"
+              data-menu-filter="cookies"
+            >
+              Cookies
+            </button>
+            <button
+              type="button"
+              class="menu-filter"
+              role="tab"
+              aria-selected="false"
+              data-menu-filter="drinks"
+            >
+              Drinks
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-grid-wrap">
+        <div class="menu-grid-wrap__inner">
+          <div class="menu-grid" id="menu-grid"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__grid">
+          <div class="site-footer__col site-footer__col--brand">
+            <a class="site-footer__logo" href="index.html">
+              <span class="site-footer__mark" aria-hidden="true">D</span>
+              <span class="site-footer__name">Dough & Co.</span>
+            </a>
+            <p class="site-footer__tagline">
+              Handcrafted with love since 2012. Every batch tells a story.
+            </p>
+          </div>
+
+          <div class="site-footer__col">
+            <h3 class="site-footer__heading">Navigate</h3>
+            <ul class="site-footer__list">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="menu.html">Menu</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="terms-of-use.html">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <h3 class="site-footer__heading">Visit us</h3>
+            <p class="site-footer__text">
+              123 Sugar Lane<br />
+              Sweet Town, ST 12345
+            </p>
+            <p class="site-footer__text">Open Daily 6AM – 2PM</p>
+            <p class="site-footer__highlight">Gone by noon. Come early.</p>
+          </div>
+        </div>
+
+        <div class="site-footer__rule" aria-hidden="true"></div>
+        <p class="site-footer__legal">
+          © 2026 Dough & Co. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="menu.js"></script>
+  </body>
+</html>
