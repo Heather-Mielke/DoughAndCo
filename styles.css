@@ -1162,14 +1162,6 @@ body {
 }
 
 .menu-toolbar {
-  position: sticky;
-  top: calc(1px + 5rem);
-  z-index: 50;
-  background: linear-gradient(
-    to bottom,
-    var(--white) 70%,
-    rgba(255, 255, 255, 0.92) 100%
-  );
   padding-bottom: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -1335,10 +1327,6 @@ body {
 }
 
 @media (max-width: 560px) {
-  .menu-toolbar {
-    top: calc(1px + 4.5rem);
-  }
-
   .menu-grid {
     grid-template-columns: 1fr;
   }
